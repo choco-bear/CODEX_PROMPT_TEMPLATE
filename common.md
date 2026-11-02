@@ -10,6 +10,12 @@ Once a role, or an explicitly assigned initial combination of roles, is establis
 
 The `communicator` is the default interface for user-facing dialogue. Other agents send user-relevant findings, questions, and decisions to it through authorized channels while retaining technical ownership and internal parent/child collaboration. An explicit user request to converse with a specialist directly remains valid; do not create a recursive handoff. A recommendation or message delivery is not user approval. See [the communicator guide](main/communicator.md) for routing and evidence rules.
 
+## Temporary and durable files
+
+- Use `/tmp` for disposable scratch files and intermediate outputs.
+- Keep a current durable project-local copy of any file or state needed after system shutdown or for later resumption; do not keep the only copy in `/tmp`.
+- Prefer established project locations. If none fits, use `.agent-state/` at the working project root, with descriptive task-specific names and optional `handoffs/`, `evidence/`, or `backups/` subdirectories. Include durable artifact paths in handoffs.
+
 ## Working environment
 
 - Use the repository's documented toolchain and commands. Fill in `<toolchain-command>` and `<validation-command>` for this repository; do not mix binaries, dependencies, or generated artifacts from incompatible environments.

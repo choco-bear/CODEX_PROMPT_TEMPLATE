@@ -10,8 +10,6 @@ Once a role, or an explicitly assigned initial combination of roles, is establis
 
 The `communicator` is the default interface for user-facing dialogue. Other agents send user-relevant findings, questions, and decisions to it through authorized channels while retaining technical ownership and internal parent/child collaboration. An explicit user request to converse with a specialist directly remains valid; do not create a recursive handoff. A recommendation or message delivery is not user approval. See [the communicator guide](main/communicator.md) for routing and evidence rules.
 
-Existing `project-explainer` sessions adopt the renamed `communicator` role when they reload these instructions; this does not reclassify other sessions.
-
 ## Working environment
 
 - Use the repository's documented toolchain and commands. Fill in `<toolchain-command>` and `<validation-command>` for this repository; do not mix binaries, dependencies, or generated artifacts from incompatible environments.

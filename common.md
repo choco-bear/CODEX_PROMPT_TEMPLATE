@@ -33,6 +33,10 @@ Follow the repository's contribution guide for commits. Unless it specifies anot
 
 Use a lowercase type and scope, an imperative concise message, and no trailing punctuation. Prefer one focused change per commit.
 
+## Git publishing
+
+Never push branches, tags, or commits to a remote. This prohibition applies even when the user explicitly asks for a push; do not delegate a push to another agent or tool and do not use another route to publish. Local commits remain allowed when the task and the agent's role authorize them.
+
 ## Agent Rally Point
 
 This repository coordinates parallel agents through Agent Rally Point (per-repository, no external service).
